@@ -8,7 +8,7 @@ HIP_DIR=${HIP_HOME}
 OPENCL_DIR=${OPENCL_HOME}
 ROCCLR_DIR=${VDI_HOME}
 
-SANITIZE_FLAGS="-fsanitize=address -shared-libasan"
+#SANITIZE_FLAGS="-fsanitize=address -shared-libasan"
 
 if [ -d ${HIPAMD_BUILD} ]; then
         rm -rf ${HIPAMD_BUILD}

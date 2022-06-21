@@ -39,7 +39,7 @@ dir_list['rocr-debug-agent']="amd-master"
 dir_list['rocm-dbgapi']="amd-staging"
 dir_list['roctracer']="amd-staging"
 dir_list['rocprofiler']="amd-staging"
-dir_list['flang']="aomp-dev"
+dir_list['flang']="master"
 
 function check_Clone_OR_Pull(){
 DIR_NAME="$1"
