@@ -16,12 +16,12 @@ fi
 set -x 
 
 cmake -G "Unix Makefiles" \
-				-DCMAKE_C_COMPILER="gcc" \
-				-DCMAKE_CXX_COMPILER="g++" \
-				-DCMAKE_BUILD_TYPE="Release" \
-				-DCMAKE_PREFIX_PATH="$Debug_Agent_PREFIX_PATH" \
-				-DCMAKE_INSTALL_PREFIX="$INSTALL_HOME" \
-				$SOURCE_DIR
+	-DCMAKE_C_COMPILER="gcc" \
+	-DCMAKE_CXX_COMPILER="g++" \
+	-DCMAKE_BUILD_TYPE="Release" \
+	-DCMAKE_PREFIX_PATH="$Debug_Agent_PREFIX_PATH" \
+	-DCMAKE_INSTALL_PREFIX="$INSTALL_HOME" \
+	$SOURCE_DIR
 
 make -j8 
 

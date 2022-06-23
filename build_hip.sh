@@ -17,14 +17,14 @@ fi
 set -x 
 
 cmake -G "Unix Makefiles" \
-				-DROCclr_DIR=${ROCclr_DIR} \
-				-DCMAKE_C_FLAGS="-fsanitize=address -shared-libasan" \
-				-DCMAKE_CXX_FLAGS="-fsanitize=address -shared-libasan" \
-				-DHIP_COMPILER=clang \
-				-DHIP_PLATFORM=rocclr \
-				-DCMAKE_PREFIX_PATH="${VDI_BUILD};${COMGR_BUILD};${LLVM_BUILD}" \
-				-DCMAKE_INSTALL_PREFIX=${HIP_INSTALL} \
-				$SOURCE_DIR
+	-DROCclr_DIR=${ROCclr_DIR} \
+	-DCMAKE_C_FLAGS="-fsanitize=address -shared-libasan" \
+	-DCMAKE_CXX_FLAGS="-fsanitize=address -shared-libasan" \
+	-DHIP_COMPILER=clang \
+	-DHIP_PLATFORM=rocclr \
+	-DCMAKE_PREFIX_PATH="${VDI_BUILD};${COMGR_BUILD};${LLVM_BUILD}" \
+	-DCMAKE_INSTALL_PREFIX=${HIP_INSTALL} \
+	$SOURCE_DIR
 
 make -j8
 

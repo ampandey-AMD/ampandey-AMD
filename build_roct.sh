@@ -15,12 +15,12 @@ fi
 set -x
 
 cmake -G "Unix Makefiles" \
-				-DCMAKE_C_COMPILER="gcc" \
-				-DCMAKE_CXX_COMPILER="g++" \
-				-DCMAKE_BUILD_TYPE="Debug" \
-				-DCMAKE_INSTALL_PREFIX=${INSTALL_HOME} \
-				-DBUILD_SHARED_LIBS="ON" \
-				$SOURCE_DIR
+	-DCMAKE_C_COMPILER="gcc" \
+	-DCMAKE_CXX_COMPILER="g++" \
+	-DCMAKE_BUILD_TYPE="Debug" \
+	-DCMAKE_INSTALL_PREFIX=${INSTALL_HOME} \
+	-DBUILD_SHARED_LIBS="ON" \
+	$SOURCE_DIR
 
 make -j4 
 

@@ -56,7 +56,7 @@ fi
 
 function run_Clone_OR_Pull(){					
 ### LLVM
-#check_Clone_OR_Pull 'llvm-project'
+check_Clone_OR_Pull 'llvm-project'
 
 ### DEVICE LIBS
 check_Clone_OR_Pull 'device-libs'
